@@ -3,20 +3,20 @@ resources:
 - name: my-git-repo
   type: git
   source:
-    uri: https://github.com/ruanbekker/concourse-test
+    uri: https://github.com/jear/concourse-test
     branch: basic-helloworld
 
 - name: my-rw-git-repo
   type: git
   source:
-    uri: git@github.com:ruanbekker/concourse-test.git
+    uri: git@github.com:jear/concourse-test.git
     branch: basic-helloworld
     private_key: ((publishing-outputs-private-key))
 
 - name: application-repo
   type: git
   source:
-    uri: https://github.com/ruanbekker/flask-remote-ip
+    uri: https://github.com/jear/flask-remote-ip
 
 jobs:
 - name: hello-world-job
